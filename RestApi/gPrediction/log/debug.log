@@ -1,0 +1,363 @@
+ERROR 2016-11-17 08:30:20,919 base 5215 140624317282048 Internal Server Error: /gp-search-result/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 70, in get_search_result
+    prediction_output = get_gender_predictions(name_input)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 52, in get_gender_predictions
+    train_set, test_set = featuresets[int(total_record*.90):], featuresets[:int(total_record*.10)]
+NameError: global name 'total_record' is not defined
+ERROR 2016-11-17 08:32:52,661 base 5258 140053080880896 Internal Server Error: /gp-search-result/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 70, in get_search_result
+    prediction_output = get_gender_predictions(name_input)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 53, in get_gender_predictions
+    classifier = nltk.NaiveBayesClassifier.train(train_data)
+  File "/root/anaconda2/lib/python2.7/site-packages/nltk/classify/naivebayes.py", line 196, in train
+    for fname, fval in featureset.items():
+AttributeError: 'unicode' object has no attribute 'items'
+ERROR 2016-11-17 08:45:13,628 base 5481 139766937134848 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 75, in get_search_result
+    prediction_output = get_gender_predictions(name_input)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 53, in get_gender_predictions
+    classifier = nltk.NaiveBayesClassifier.train(train_data)
+  File "/root/anaconda2/lib/python2.7/site-packages/nltk/classify/naivebayes.py", line 196, in train
+    for fname, fval in featureset.items():
+AttributeError: 'unicode' object has no attribute 'items'
+ERROR 2016-11-17 08:45:37,734 base 5481 139766937134848 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 75, in get_search_result
+    prediction_output = get_gender_predictions(name_input)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 53, in get_gender_predictions
+    classifier = nltk.NaiveBayesClassifier.train(train_data)
+  File "/root/anaconda2/lib/python2.7/site-packages/nltk/classify/naivebayes.py", line 196, in train
+    for fname, fval in featureset.items():
+AttributeError: 'unicode' object has no attribute 'items'
+ERROR 2016-11-17 08:46:32,827 base 5504 139817327965952 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 76, in get_search_result
+    prediction_output = get_gender_predictions(name_input)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 53, in get_gender_predictions
+    classifier = nltk.NaiveBayesClassifier.train(train_data)
+  File "/root/anaconda2/lib/python2.7/site-packages/nltk/classify/naivebayes.py", line 196, in train
+    for fname, fval in featureset.items():
+AttributeError: 'unicode' object has no attribute 'items'
+ERROR 2016-11-17 08:46:46,459 base 5504 139817317476096 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 76, in get_search_result
+    prediction_output = get_gender_predictions(name_input)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 53, in get_gender_predictions
+    classifier = nltk.NaiveBayesClassifier.train(train_data)
+  File "/root/anaconda2/lib/python2.7/site-packages/nltk/classify/naivebayes.py", line 196, in train
+    for fname, fval in featureset.items():
+AttributeError: 'unicode' object has no attribute 'items'
+ERROR 2016-11-17 08:47:18,157 base 5533 140170804496128 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 76, in get_search_result
+    prediction_output = get_gender_predictions(name_input)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 53, in get_gender_predictions
+    classifier = nltk.NaiveBayesClassifier.train(train_data)
+  File "/root/anaconda2/lib/python2.7/site-packages/nltk/classify/naivebayes.py", line 196, in train
+    for fname, fval in featureset.items():
+AttributeError: 'unicode' object has no attribute 'items'
+ERROR 2016-11-17 08:48:50,007 base 5692 140024330487552 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 62, in get_search_result
+    name_list = name_text.split(",")
+AttributeError: 'NoneType' object has no attribute 'split'
+ERROR 2016-11-17 08:49:48,867 base 5739 140312199276288 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 67, in get_search_result
+    print "name_list",name_list
+UnboundLocalError: local variable 'name_list' referenced before assignment
+ERROR 2016-11-17 08:50:05,290 base 5765 140165017061120 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 85, in get_search_result
+    return_object.append({"name":name_input,"prediction":prediction_output,'status':status})
+AttributeError: 'dict' object has no attribute 'append'
+ERROR 2016-11-17 08:51:27,308 base 5816 140633881618176 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 86, in get_search_result
+    return_object_final = {return_object}
+TypeError: unhashable type: 'list'
+ERROR 2016-11-17 08:53:41,912 base 5988 139865878054656 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 77, in get_search_result
+    prediction_output = get_gender_predictions(name_input)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 53, in get_gender_predictions
+    classifier = nltk.NaiveBayesClassifier.train(train_data)
+  File "/root/anaconda2/lib/python2.7/site-packages/nltk/classify/naivebayes.py", line 196, in train
+    for fname, fval in featureset.items():
+AttributeError: 'unicode' object has no attribute 'items'
+ERROR 2016-11-17 08:54:33,581 base 6017 139798524462848 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 77, in get_search_result
+    prediction_output = get_gender_predictions(name_input)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 53, in get_gender_predictions
+    classifier = nltk.NaiveBayesClassifier.train(train_data)
+  File "/root/anaconda2/lib/python2.7/site-packages/nltk/classify/naivebayes.py", line 196, in train
+    for fname, fval in featureset.items():
+AttributeError: 'unicode' object has no attribute 'items'
+ERROR 2016-11-17 08:55:16,786 base 6044 139730270287616 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 78, in get_search_result
+    prediction_output = get_gender_predictions(name_input)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 53, in get_gender_predictions
+    classifier = nltk.NaiveBayesClassifier.train(train_data)
+  File "/root/anaconda2/lib/python2.7/site-packages/nltk/classify/naivebayes.py", line 196, in train
+    for fname, fval in featureset.items():
+AttributeError: 'unicode' object has no attribute 'items'
+ERROR 2016-11-17 08:56:52,744 base 6095 140143343564544 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 79, in get_search_result
+    prediction_output = get_gender_predictions(name_input)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 53, in get_gender_predictions
+    classifier = nltk.NaiveBayesClassifier.train(train_data)
+  File "/root/anaconda2/lib/python2.7/site-packages/nltk/classify/naivebayes.py", line 196, in train
+    for fname, fval in featureset.items():
+AttributeError: 'unicode' object has no attribute 'items'
+ERROR 2016-11-17 09:12:25,179 base 6820 139623581857536 Internal Server Error: /admin/gp/enquiry/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1494, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1245, in response_action
+    response = func(self, request, queryset)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/actions.py", line 37, in delete_selected
+    queryset, opts, request.user, modeladmin.admin_site, using)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 163, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 223, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 209, in _nested
+    ret = [format_callback(obj)]
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 136, in format_callback
+    force_text(obj))
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
+    s = six.text_type(s)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/models.py", line 22, in __unicode__
+    return str(self.url)
+AttributeError: 'Enquiry' object has no attribute 'url'
+ERROR 2016-11-17 09:13:07,071 base 6820 139623581857536 Internal Server Error: /admin/gp/enquiry/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1494, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1245, in response_action
+    response = func(self, request, queryset)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/actions.py", line 37, in delete_selected
+    queryset, opts, request.user, modeladmin.admin_site, using)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 163, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 223, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 209, in _nested
+    ret = [format_callback(obj)]
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 136, in format_callback
+    force_text(obj))
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
+    s = six.text_type(s)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/models.py", line 22, in __unicode__
+    return str(self.url)
+AttributeError: 'Enquiry' object has no attribute 'url'
+ERROR 2016-11-17 09:13:30,685 base 6820 139623565072128 Internal Server Error: /admin/gp/enquiry/add/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1435, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/decorators.py", line 184, in inner
+    return func(*args, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1382, in changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/contrib/admin/options.py", line 714, in log_addition
+    object_repr=force_text(object),
+  File "/root/anaconda2/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
+    s = six.text_type(s)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/models.py", line 22, in __unicode__
+    return str(self.url)
+AttributeError: 'Enquiry' object has no attribute 'url'
+ERROR 2016-11-17 09:39:01,484 base 7220 140653059532544 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 96, in get_search_result
+    return HttpResponse(json.dumps(return_object_final),
+UnboundLocalError: local variable 'return_object_final' referenced before assignment
+ERROR 2016-11-17 09:41:15,077 base 7301 140620081116928 Internal Server Error: /get-gender-prediction/
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 96, in get_search_result
+    return HttpResponse(json.dumps(return_object_final),
+UnboundLocalError: local variable 'return_object_final' referenced before assignment
+ERROR 2016-11-17 21:45:06,841 base 8875 139649981601536 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 32, in index
+    return render(request, 'index.html',{"no_record_count":no_record_count})
+  File "/root/anaconda2/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/base.py", line 988, in render
+    bit = node.render_annotated(context)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/base.py", line 955, in render_annotated
+    return self.render(context)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/base.py", line 988, in render
+    bit = node.render_annotated(context)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/base.py", line 955, in render_annotated
+    return self.render(context)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/base.py", line 988, in render
+    bit = node.render_annotated(context)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/base.py", line 955, in render_annotated
+    return self.render(context)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    values = list(values)
+TypeError: 'int' object is not iterable
+ERROR 2016-11-17 21:45:40,122 base 8898 139651818235648 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 31, in index
+    no_record_count = [i for i in 10]
+TypeError: 'int' object is not iterable
+ERROR 2016-11-17 21:46:26,136 base 8921 139805241992960 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/amar/684903ca-ae79-43c8-a8ae-61dc8c66eaf4/workspace/datasc/genderPrediction/RestApi/gPrediction/gp/views.py", line 31, in index
+    no_record_count = [i for i in 10]
+TypeError: 'int' object is not iterable
